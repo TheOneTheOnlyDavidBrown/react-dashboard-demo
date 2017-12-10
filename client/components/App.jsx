@@ -11,7 +11,7 @@ import Dashboard from './Dashboard.jsx';
 import NavBar from './NavBar.jsx';
 
 // Functional stateless component
-const App = () => (
+export default () => (
     <Router history={hashHistory}>
         <div>
             <NavBar />
@@ -23,4 +23,3 @@ const App = () => (
         </div>
     </Router>
 );
-export default App;

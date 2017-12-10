@@ -4,7 +4,7 @@ import UsernameDropdown from './UsernameDropdown.jsx';
 import { Link } from 'react-router-dom';
 
 // Functional stateless component
-const NavBar = () => (
+export default () => (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <Link className="navbar-brand" to="/">Demo App</Link>
         <button
@@ -20,4 +20,3 @@ const NavBar = () => (
         </div>
     </nav>
 );
-export default NavBar;

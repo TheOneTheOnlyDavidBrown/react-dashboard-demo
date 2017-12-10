@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Functional stateless component
-const UsernameDropdown = () => (
+export default () => (
     <form className="form-inline my-2 my-lg-0">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item dropdown">
@@ -19,4 +19,3 @@ const UsernameDropdown = () => (
         </ul>
     </form>
 );
-export default UsernameDropdown;

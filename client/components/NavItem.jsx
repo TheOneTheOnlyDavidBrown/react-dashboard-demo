@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 // Functional stateless component
-const NavItem = (props) => (
+export default (props) => (
     <li className="nav-item">
         <NavLink
             activeStyle={{ fontStyle: 'bold' }}
@@ -11,4 +11,3 @@ const NavItem = (props) => (
         </NavLink>
     </li>
 );
-export default NavItem;

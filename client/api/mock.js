@@ -1,6 +1,5 @@
 import mockResponse from './data/mockResponse';
-const mockApi = {
+export default {
     getData: () => fetch('api/react-demo/getdata')
         .then((response) => mockResponse)
 };
-export default mockApi;
