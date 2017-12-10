@@ -3,18 +3,18 @@ import ReactTable from 'react-table';
 import MockApi from '../api/mock';
 
 class Dashboard extends React.Component {
+    state = {
+        data: [],
+        columns: [{
+            Header: 'Host',
+            accessor: 'host'
+        }, {
+            Header: 'TLD',
+            accessor: 'tld'
+        }]
+    };
     constructor() {
         super();
-        this.state = {
-            data: [],
-            columns: [{
-                Header: 'Host',
-                accessor: 'host'
-            }, {
-                Header: 'TLD',
-                accessor: 'tld'
-            }]
-        };
     }
     // mock backend call
     getData() {
